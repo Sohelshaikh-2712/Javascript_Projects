@@ -1,0 +1,155 @@
+/* desktop style */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+
+}
+
+h1 {
+  font-size: 3rem;
+  color: #51d6e2;
+  margin: 2rem 1rem;
+  text-align: center;
+  
+}
+
+.container {
+  width: 60%;
+  padding: 20px;
+  border: 4px solid #ccc;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
+}
+
+.inner-container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 4rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.hex-code {
+  font-size: 3rem;
+  color: #51d6e2;
+  margin-top: 15px;
+}
+
+
+/* Responsive Breakpoints */
+
+/* Large Screen (max-width: 1200px) */
+@media only screen and  (max-width: 1200px ) {
+  .container {
+    width: 70%;
+  }
+
+  h1 {
+    font-size: 3.8rem;
+  }
+
+  button {
+    font-size: 3.4rem;
+  }
+
+  .hex-code {
+    font-size: 3.2rem;
+  }
+}
+
+/* Medium Screen (max-width: 920px) */
+@media only screen and  (max-width: 920px) {
+  .container {
+    width: 80%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 3.4rem;
+  }
+
+  .inner-container {
+    padding: 15px;
+  }
+
+  button {
+    font-size: 3rem;
+    padding: 8px 16px;
+  }
+
+  .hex-code {
+    font-size: 2.8rem;
+  }
+}
+
+
+/* Small Screen (max-width: 778px) */
+@media only screen and  (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  button {
+    font-size: 2.4rem;
+  }
+
+  .hex-code {
+    font-size: 2rem;
+  }
+}
+
+/* Extra Small Screen (max-width: 480px) */
+@media only screen and  (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .inner-container {
+    padding: 15px;
+  }
+
+  button {
+    font-size: 2rem;
+    padding: 8px 16px;
+  }
+
+  .hex-code {
+    font-size: 1.8rem;
+  }
+}
